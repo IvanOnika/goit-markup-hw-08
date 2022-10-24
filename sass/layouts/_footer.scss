@@ -9,16 +9,36 @@ footer {
   padding-bottom: 60px;
   align-items: center;
 
-  @media screen and(min-width:480px) {
+  @media screen and(max-width:767px) {
     flex-direction: column;
+  }
+
+  @media screen and(min-width:768px) {
+    justify-content: space-around;
+    max-width: 738px;
+  }
+
+  @media screen and(max-width:1199px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and(min-width:1200px) {
+    align-items: baseline;
+    max-width: 1200px;
   }
 }
 
 .left-column {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and(max-width:1199px) {
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-right: 70px;
+  }
 }
 
 .logo__footer {
@@ -38,7 +58,11 @@ address {
 }
 
 .footer__location {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media screen and(min-width:1200px) {
+    margin-bottom: 9px;
+  }
 
   &:first-child a {
     color: var(--primary-white-color);
@@ -62,11 +86,16 @@ address {
 //
 
 .join-social {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
+
+  @media screen and(max-width:1199px) {
+  }
+
+  @media screen and(min-width:1200px) {
+  }
 }
 
 .join-to-us {
@@ -112,17 +141,28 @@ address {
 .follow-us {
   display: flex;
   width: 100%;
+
+  @media screen and(min-width:1200px) {
+  }
 }
 
 .follow {
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and(min-width:1200px) {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
 }
 
 .follow__label {
   width: 100%;
+  max-width: 450px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -133,6 +173,7 @@ address {
   align-items: center;
   flex-direction: column;
   padding-top: 12px;
+  margin-bottom: 20px;
 
   & input::placeholder {
     font-weight: 400;
@@ -140,6 +181,12 @@ address {
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-bottom: 0px;
+    align-items: flex-start;
+    max-width: 358px;
   }
 }
 
@@ -154,6 +201,10 @@ address {
   border-radius: 4px;
   outline: 1px solid #212121;
   color: #ffffff;
+
+  @media screen and(min-width:1200px) {
+    max-width: 358px;
+  }
 }
 
 .follow__btn {
@@ -173,6 +224,7 @@ address {
   display: flex;
   align-items: center;
   padding: 10px 28px;
+  margin-left: 12px;
 }
 .follow__icon {
   margin-left: 10px;
