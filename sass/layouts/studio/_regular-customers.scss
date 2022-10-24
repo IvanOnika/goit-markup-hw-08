@@ -1,17 +1,29 @@
 .clients__list {
   display: flex;
   gap: 30px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.client__item {
+.clients__item {
   display: flex;
+  width: calc((100% - 30px) / 2);
+
+  @media screen and(min-width:768px) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and(min-width:1200px){
+    width: calc((100% - 150px) / 6);
+  }
 }
 
-.client__link {
+.clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 100%;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
