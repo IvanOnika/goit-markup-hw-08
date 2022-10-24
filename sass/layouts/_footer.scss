@@ -3,10 +3,22 @@ footer {
 }
 
 .footer__container {
+  width: 100%;
   display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
-  align-items: flex-start;
+  align-items: center;
+
+  @media screen and(min-width:480px) {
+    flex-direction: column;
+  }
+}
+
+.left-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo__footer {
@@ -16,6 +28,13 @@ footer {
 address {
   margin-top: 20px;
   font-style: normal;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 .footer__location {
@@ -43,10 +62,11 @@ address {
 //
 
 .join-social {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  width: 206px;
-  margin-left: 70px;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 .join-to-us {
@@ -91,15 +111,18 @@ address {
 
 .follow-us {
   display: flex;
-  margin-left: 94px;
+  width: 100%;
 }
 
 .follow {
+  width: 100%;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
 }
 
 .follow__label {
+  width: 100%;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -107,6 +130,7 @@ address {
   text-transform: uppercase;
   color: #ffffff;
   display: flex;
+  align-items: center;
   flex-direction: column;
   padding-top: 12px;
 
@@ -121,7 +145,7 @@ address {
 
 .follow__input {
   height: 50px;
-  width: 358px;
+  width: 100%;
   padding-left: 15px;
   margin-top: 20px;
   background-color: #2f303a;
@@ -145,7 +169,6 @@ address {
   border: 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin: 0;
-  margin-left: 12px;
   cursor: pointer;
   display: flex;
   align-items: center;
