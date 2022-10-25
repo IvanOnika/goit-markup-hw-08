@@ -302,9 +302,6 @@ ul {
   border: 0;
 }
 
-header {
-  display: none;
-}
 @media screen and (min-width: 768px) {
   header {
     max-width: 768px;
@@ -315,13 +312,20 @@ header {
 }
 
 .container-header {
-  max-width: 768px;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  max-width: 450px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: flex;
   align-items: center;
   margin: auto;
   justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .container-header {
+    max-width: 768px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container-header {
@@ -348,9 +352,28 @@ header {
   }
 }
 
+.mobile__button-menu {
+  border: 0px;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .mobile__button-menu {
+    display: none;
+  }
+}
+
+.mobile__icon {
+  fill: #212121;
+}
+
 .nav {
-  display: flex;
+  display: none;
   flex-shrink: 0;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
 }
 @media screen and (min-width: 1200px) {
   .nav {
@@ -402,7 +425,7 @@ header {
 }
 
 .contacts {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-start;
   letter-spacing: 0.02em;
@@ -411,6 +434,11 @@ header {
 }
 .contacts:first-child {
   margin-right: 50px;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contacts {
