@@ -1,21 +1,34 @@
 header {
-  position: relative;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  height: 80px;
+  display: none;
+
+  @media screen and(min-width:768px) {
+    max-width: 768px;
+    display: contents;
+    position: relative;
+    height: 80px;
+  }
 }
 
 .container-header {
+  max-width: 768px;
+  padding-top: 21px;
+  padding-bottom: 21px;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   margin: auto;
-  justify-content: center;
+  justify-content: space-between;
+
+  @media screen and(min-width:1200px) {
+    max-width: 1200px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .logo {
   display: inline-block;
   font-family: Raleway, cursive;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.19;
   color: var(--accent-color);
@@ -23,12 +36,19 @@ header {
   &--light {
     color: #000;
   }
+
+  @media screen and(min-width:1200px) {
+    font-size: 26px;
+  }
 }
 
 .nav {
-  margin-left: 93px;
   display: flex;
   flex-shrink: 0;
+
+  @media screen and(min-width:1200px) {
+    margin-left: 93px;
+  }
 }
 
 .nav__item {
@@ -63,24 +83,35 @@ header {
   &::after {
     position: absolute;
     left: 0;
-    bottom: -28px;
+    bottom: -33px;
     content: "";
     width: 100%;
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 4px;
     z-index: 1;
+
+    @media screen and(min-width:1200px) {
+      bottom: -31px;
+    }
   }
 }
 
 .contacts {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   letter-spacing: 0.02em;
-  margin-left: 318px;
   flex-shrink: 0;
+  gap: 10px;
 
   &:first-child {
     margin-right: 50px;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-left: 310px;
+    flex-direction: row;
   }
 }
 
@@ -97,7 +128,7 @@ header {
   transition-property: color;
   transition-duration: 250ms;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   display: flex;
   align-items: center;
@@ -118,6 +149,10 @@ header {
   &:hover .contact__phone,
   &:focus .contact__phone {
     fill: var(--accent-color);
+  }
+
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
   }
 }
 
