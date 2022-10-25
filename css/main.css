@@ -542,6 +542,11 @@ header {
 .content-no-pt {
   padding-top: 0px;
 }
+@media screen and (max-width: 1199px) {
+  .content-no-pt {
+    display: none;
+  }
+}
 
 .benefits__list {
   display: flex;
@@ -824,6 +829,7 @@ address {
   align-items: center;
   margin-bottom: 60px;
 }
+
 .join-to-us {
   padding-top: 12px;
   margin-bottom: 20px;
@@ -866,6 +872,7 @@ address {
   width: 100%;
   justify-content: center;
 }
+
 .follow {
   width: 100%;
   display: flex;
