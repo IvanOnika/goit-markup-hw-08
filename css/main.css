@@ -697,6 +697,26 @@ header {
   }
 }
 
+.container__hero {
+  max-width: 480px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container__hero {
+    max-width: 767px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container__hero {
+    max-width: 1199px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container__hero {
+    max-width: 1600px;
+  }
+}
+
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
