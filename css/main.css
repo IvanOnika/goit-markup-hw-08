@@ -634,7 +634,7 @@ header {
 
 .header-border {
   position: absolute;
-  top: 78px;
+  top: 77px;
   content: "";
   width: 100%;
   border-bottom: 1px solid #ececec;
