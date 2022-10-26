@@ -193,12 +193,20 @@
           <ul class="benefits__list">
             <li class="benefits__item">
               <div class="benefits__thumb">
-                <img
-                  class="benefits__photo"
-                  src="./images/box1.jpg"
-                  alt="Написання коду"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/example-1-min.jpg     1x,
+                      ./images/example-1-2x-min.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    class="benefits__photo"
+                    src="./images/example-1-min.jpg"
+                    alt="Проектування дизайну"
+                  />
+                </picture>
                 <div class="benefits__overlay">
                   <p class="benefits__description">Десктопні додатки</p>
                 </div>
@@ -206,12 +214,20 @@
             </li>
             <li class="benefits__item">
               <div class="benefits__thumb">
-                <img
-                  class="benefits__photo"
-                  src="./images/box2.jpg"
-                  alt="Мобільна розробка"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/example-2-min.jpg     1x,
+                      ./images/example-2-2x-min.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    class="benefits__photo"
+                    src="./images/example-2-min.jpg"
+                    alt="Мобільна розробка"
+                  />
+                </picture>
                 <div class="benefits__overlay">
                   <p class="benefits__description">Мобільні додатки</p>
                 </div>
@@ -219,12 +235,20 @@
             </li>
             <li class="benefits__item">
               <div class="benefits__thumb">
-                <img
-                  class="benefits__photo"
-                  src="./images/box3.jpg"
-                  alt="Розробка дизайну"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/example-3-min.jpg     1x,
+                      ./images/example-3-2x-min.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    class="benefits__photo"
+                    src="./images/example-3-min.jpg"
+                    alt="Розробка дизайну"
+                  />
+                </picture>
                 <div class="benefits__overlay">
                   <p class="benefits__description">Дизайнерські рішення</p>
                 </div>
@@ -239,12 +263,34 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__card">
-              <img
-                class="photo"
-                src="./images/photo1.jpg"
-                alt="фото Ігора"
-                width="100%"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-1-desctop-min.jpg    1x,
+                    ./images/team-1-desctop-2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-1-tablet-min.jpg    1x,
+                    ./images/team-1-tablet-2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-1-mobile-min.jpg    1x,
+                    ./images/team-1-mobile-2x-min.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="photo"
+                  src="./images/team-1-desctop-min.jpg"
+                  alt="фото Ігора"
+                />
+              </picture>
               <div class="about-text">
                 <h3 class="team__names">Ігор Дем'яненко</h3>
                 <p class="job__title">Product Designer</p>
@@ -289,12 +335,34 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                class="photo"
-                src="./images/photo2.jpg"
-                alt="фото Ольги"
-                width="100%"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-2-desctop-min.jpg    1x,
+                    ./images/team-2-desctop-2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-2-tablet-min.jpg    1x,
+                    ./images/team-2-tablet-2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-2-mobile-min.jpg    1x,
+                    ./images/team-2-mobile-2x-min.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="photo"
+                  src="./images/team-2-desctop-min.jpg"
+                  alt="фото Ольги"
+                />
+              </picture>
               <div class="about-text">
                 <h3 class="team__names">Ольга Рєпіна</h3>
                 <p class="job__title">Frontend Developer</p>
@@ -339,12 +407,34 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                class="photo"
-                src="./images/photo3.jpg"
-                alt="Фото Миколи"
-                width="100%"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-3-desctop-min.jpg    1x,
+                    ./images/team-3-desctop-2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-3-tablet-min.jpg    1x,
+                    ./images/team-3-tablet-2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-3-mobile-min.jpg    1x,
+                    ./images/team-3-mobile-2x-min.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="photo"
+                  src="./images/team-3-desctop-min.jpg"
+                  alt="фото Миколи"
+                />
+              </picture>
               <div class="about-text">
                 <h3 class="team__names">Микола Тарасов</h3>
                 <p class="job__title">Marketing</p>
@@ -389,12 +479,34 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                class="photo"
-                src="./images/photo4.jpg"
-                alt="Фото Михайла"
-                width="100%"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-4-desctop-min.jpg    1x,
+                    ./images/team-4-desctop-2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-4-tablet-min.jpg    1x,
+                    ./images/team-4-tablet-2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-4-mobile-min.jpg    1x,
+                    ./images/team-4-mobile-2x-min.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="photo"
+                  src="./images/team-4-desctop-min.jpg"
+                  alt="фото Михайла"
+                />
+              </picture>
               <div class="about-text">
                 <h3 class="team__names">Михайло Єрмаков</h3>
                 <p class="job__title">UI Designer</p>
