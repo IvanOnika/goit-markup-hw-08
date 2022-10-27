@@ -28,7 +28,7 @@
 
 .mobile__container {
   max-width: 768px;
-  max-height: 800px;
+  min-height: 650px;
   padding: 48px 40px;
   display: flex;
   flex-direction: column;
