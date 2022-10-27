@@ -61,7 +61,6 @@
   }
 }
 
-
 .mobile__item {
   margin-bottom: 32px;
 }
@@ -113,8 +112,9 @@
 
 .soc__mobile {
   display: flex;
-  justify-content: space-between;
-  max-width: 357px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 380px;
 }
 
 .soc__link-mobile {
@@ -123,8 +123,8 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
-  margin-left:10px;
-
+  margin-left: 10px;
+  
   @media screen and(min-width:480px) {
     font-size: 18px;
   }

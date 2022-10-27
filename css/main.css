@@ -459,8 +459,9 @@ img {
 
 .soc__mobile {
   display: flex;
-  justify-content: space-between;
-  max-width: 357px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 380px;
 }
 
 .soc__link-mobile {
