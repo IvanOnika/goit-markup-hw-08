@@ -22,7 +22,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: calc(100% - 15px);
-  max-height: 609px;
+  max-height: 645px;
   max-width: 450px;
   padding: 40px;
   background-color: #fff;
@@ -150,6 +150,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 
   @media screen and(min-width:1200px) {
     max-width: 385px;
@@ -162,7 +163,7 @@
   margin-bottom: 30px;
   align-items: baseline;
   font-size: 12px;
-  margin-left: 10px;
+  margin-left: 15px;
 
   @media screen and(min-width:480px) {
     margin-left: -15px;
@@ -182,7 +183,8 @@
   border: 2px solid black;
   border-radius: 2px;
   top: -5px;
-  left: -1px;
+  left: 0px;
+  transform: translateX(-50%);
   align-items: center;
   fill: transparent;
   transform: translateY(50%);
@@ -204,6 +206,7 @@
 
 .checkbox--text {
   font-size: 12px;
+  padding-left: 25px;
 }
 
 .checkbox__link {

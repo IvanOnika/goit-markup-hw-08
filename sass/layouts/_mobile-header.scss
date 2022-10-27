@@ -28,7 +28,11 @@
 
 .mobile__container {
   max-width: 768px;
+  max-height: 800px;
   padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .js-close-menu {
@@ -57,9 +61,6 @@
   }
 }
 
-.mobile {
-  margin-bottom: 302px;
-}
 
 .mobile__item {
   margin-bottom: 32px;

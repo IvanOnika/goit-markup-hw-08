@@ -136,7 +136,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   width: calc(100% - 15px);
-  max-height: 609px;
+  max-height: 645px;
   max-width: 450px;
   padding: 40px;
   background-color: #fff;
@@ -272,7 +272,7 @@ img {
   margin-bottom: 30px;
   align-items: baseline;
   font-size: 12px;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 @media screen and (min-width: 480px) {
   .checkbox {
@@ -294,7 +294,8 @@ img {
   border: 2px solid black;
   border-radius: 2px;
   top: -5px;
-  left: -1px;
+  left: 0px;
+  transform: translateX(-50%);
   align-items: center;
   fill: transparent;
   transform: translateY(50%);
@@ -316,6 +317,7 @@ img {
 
 .checkbox--text {
   font-size: 12px;
+  padding-left: 25px;
 }
 
 .checkbox__link {
@@ -372,7 +374,11 @@ img {
 
 .mobile__container {
   max-width: 768px;
+  max-height: 800px;
   padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .js-close-menu {
@@ -400,10 +406,6 @@ img {
   .mobile__menu {
     display: none;
   }
-}
-
-.mobile {
-  margin-bottom: 302px;
 }
 
 .mobile__item {
