@@ -466,7 +466,7 @@ img {
 
 .soc__link-mobile {
   font-weight: 500;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
@@ -706,12 +706,12 @@ header {
 }
 @media screen and (min-width: 480px) {
   .hero {
-    max-width: 480px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    max-width: 1200px;
   }
 }
 @media screen and (min-width: 1200px) {
